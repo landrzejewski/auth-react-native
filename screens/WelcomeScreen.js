@@ -1,4 +1,4 @@
-import {useContext, useState} from 'react';
+import {useContext} from 'react';
 
 import {StyleSheet, Text, View} from 'react-native';
 import {AuthContext} from '../store/auth-context';
@@ -11,6 +11,7 @@ function WelcomeScreen() {
     <View style={styles.rootContainer}>
       <Text style={styles.title}>Welcome!</Text>
       <Text>You authenticated successfully!</Text>
+      <Text>{token}</Text>
     </View>
   );
 }
