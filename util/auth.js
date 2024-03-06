@@ -11,6 +11,8 @@ async function authenticate(mode, email, password) {
     returnSecureToken: true,
   });
 
+  console.log(response);
+
   const token = response.data.idToken;
 
   return token;
